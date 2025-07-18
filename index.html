@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dinna Dinna</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="icon-192.png" />
+</head>
+<body>
+  <div id="loading-screen">
+    <img src="loading_cookie.gif" alt="Loading..." />
+  </div>
+  <div id="app" class="hidden">
+    <video id="background-video" autoplay muted loop playsinline>
+      <source src="assets/background.mp4" type="video/mp4" />
+    </video>
+    <h1 id="title">Dinna Dinna</h1>
+    <p id="tagline">Dinna dinna what's fa dinna?</p>
+    <div id="meal-card" class="card">🍽️</div>
+    <div class="buttons">
+      <button id="dislike"><img src="assets/trash.png" alt="Dislike"></button>
+      <button id="like"><img src="assets/heart.png" alt="Like"></button>
+    </div>
+    <button id="reveal">Show Me</button>
+    <div id="mode-toggle">
+      <span id="mode-label">Dinner</span>
+    </div>
+    <button id="favorites"><img src="assets/star.png" alt="Favorites" /></button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
